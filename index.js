@@ -29,7 +29,7 @@ dotenv.config();
 mongoose.set('strictQuery', false);
 const PORT = 5000;
 
-const CONNECTION ="mongodb://127.0.0.1:27017/social";
+const CONNECTION ="mongodb+srv://nicola:nicola@cluster0.ophomew.mongodb.net/";
 mongoose
   .connect(CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Listening at Port ${PORT}`)))
