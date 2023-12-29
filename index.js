@@ -29,10 +29,8 @@ dotenv.config();
 mongoose.set('strictQuery', false);
 const PORT = process.env.PORT || 5000;
 
-<<<<<<< HEAD
+
 // const CONNECTION ="mongodb://127.0.0.1:27017/social";
-=======
->>>>>>> 00dfdbacf3c3e111f6e2133775d77b0956d67794
 const CONNECTION ="mongodb+srv://nicola:nicola@cluster0.ophomew.mongodb.net/Clustor0";
 mongoose
   .connect(CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
