@@ -29,11 +29,16 @@ dotenv.config();
 mongoose.set('strictQuery', false);
 const PORT = 5000;
 
-const CONNECTION ="mongodb://127.0.0.1:27017/social";
+// const CONNECTION ="mongodb://127.0.0.1:27017/social";
+const CONNECTION ="mongodb+srv://nicola:nicola@cluster0.ophomew.mongodb.net/Clustor0";
 mongoose
   .connect(CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => app.listen(PORT, () => console.log(`Listening at Port ${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
+
+  // app.get("/",(req,res) => {
+  //   res.send("hello")
+  // })
 
 
 app.use('/auth', AuthRoute);
